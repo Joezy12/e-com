@@ -1,5 +1,5 @@
 {
-  "name": "newguyproject",
+  "name": "citibank",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,14 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.2",
+    "firebase": "^10.7.2",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.9.2",
-    "react-countup": "^6.5.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.2",
-    "swiper": "^11.0.5"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
