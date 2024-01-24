@@ -7,10 +7,15 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  padding: 0px 70px;
+  justify-content: center;
+  padding: 10px 70px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
   align-items: center;
+  gap: 2rem;
+}
+
+.plus {
+  font-size: 40px;
 }
 
 
@@ -30,6 +35,14 @@
 
 .body1 {
   padding: 20px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.body1 h1 {
+  font-size: 30px;
 }
 
 .info-head h1{
@@ -64,8 +77,10 @@
 .form {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 50px 200px;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .form h2 {
@@ -96,6 +111,10 @@
   background: #003B70 ;
   border: none;
   color: white;
+}
+
+.irs-img {
+  width: 100px;
 }
 
 @media screen and (max-width:768px) {
