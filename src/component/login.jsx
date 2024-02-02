@@ -28,7 +28,7 @@ function Login() {
                         <div className="form-info">
                             <div className="info">
                                 <select name="" id="">
-                                    <option>I am a</option>
+                                    <option>I am a?</option>
                                     <option>Man</option>
                                     <option>Woman</option>
                                 </select>
