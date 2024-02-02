@@ -1,20 +1,14 @@
-
 import React from "react";
 
 function Navbar() {
 
     return (
-        <section className="navbar">
-            <div className="logo">
-                <img src="https://1000logos.net/wp-content/uploads/2016/11/Citibank-logo.jpg" alt="" className="logo-img" />
+        <nav className="navbar">
+            <h1>Naiji<span>Chat</span></h1>
+            <div className="sign">
+                <button>Sign out</button>
             </div>
-           
-            <div className="irs">
-               <h1>Current account <span>application</span></h1>
-               
-            </div>
-
-        </section>
+        </nav>
     )
 }
 
